@@ -8,33 +8,36 @@
   </head>
   <body id="pane">
     <section class="start">
-      <img class="protagonist" src="one.jpg" />
+      <img class="protagonist" src="https://baconmockup.com/400/400" />
+    </section>
+    <section class="start">
+      <img class="bacon" src="https://baconmockup.com/200/200"
     </section>
     <main>
       <div class="wrapper">
         <section class="slide one">
           <article class="vh-center">
-            <p class="center">First page text!</p>
+            <p class="center"></p>
           </article>
         </section>
         <section class="slide two">
           <article class="vh-center">
-            <p class="center">Second page text!</p>
+            <p class="center"></p>
           </article>
         </section>
         <section class="slide three">
           <article class="vh-center">
-            <p class="center">Third Page Text!</p>
+            <p class="center"></p>
           </article>
         </section>
         <section class="slide four">
           <article class="vh-center">
-            <p class="center">Fourth page text!</p>
+            <p class="center"></p>
           </article>
         </section>
         <section class="slide five">
           <article class="vh-center">
-            <p class="center">Fifth page text!</p>
+            <p class="center"></p>
           </article>
         </section>
       </div>
@@ -55,31 +58,25 @@
 
       $(".three").waypoint(
         function () {
-          $(".protagonist").css("filter", "hue-rotate(90deg)")
+          $(".protagonist").css("filter", "saturate(55)")
         },
         { offset: "50%", horizontal: true }
       )
       $(".two").waypoint(
         function () {
-          $(".protagonist").css("filter", "grayscale")
+          $(".protagonist").attr("src", "https://baconmockup.com/401/400")
         },
         { offset: "50%", horizontal: true }
       )
       $(".three").waypoint(
         function () {
-          $(".protagonist").css("filter", "hue-rotate(90deg)")
+          $(".bacon").css("opacity", "100%")
         },
         { offset: "50%", horizontal: true }
       )
       $(".four").waypoint(
         function () {
-          $(".protagonist").css("filter", "hue-rotate(90deg)")
-        },
-        { offset: "50%", horizontal: true }
-      )
-     $(".five").waypoint(
-        function () {
-          $(".protagonist").css("filter", "hue-rotate(90deg)")
+          $(".bacon").css("background-color", "gold")
         },
         { offset: "50%", horizontal: true }
       )

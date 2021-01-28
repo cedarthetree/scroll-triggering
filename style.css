@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background-color: #0d065c;
+  background-color: salmon;
   position: relative;
 }
 
@@ -18,10 +18,21 @@ p {
   top: 0;
   left: 300px;
   border-radius: 50px;
-  filter: hue-rotate(0deg);
+  filter: saturate(0%);
   transition: transform 2s;
-  width: 200px;
 }
+
+.bacon {
+  padding: 20px;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  left: 0px;
+  border-radius: 50px;
+  transition: transform 5s;
+  opacity: 1%;
+}
+
 .flip {
   transform: scaleX(-1);
 }
@@ -59,19 +70,20 @@ main {
   right: 0;
 }
 .one {
-  background: #514ce6;
+  background: salmon;
 }
 .two {
-  background: #3a37a6;
+  background: red;
 }
 .three {
-  background: #2a2878;
+  background: orange;
+  background-image: url(https://baconmockup.com/1300/900) 0%;
 }
 .four {
-  background: #1f1d57;
+  background: pink;
 }
 .five {
-  background: #111030;
+  background: indianred;
 }
 .center {
   text-align: center;
