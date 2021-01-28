@@ -8,7 +8,7 @@
   </head>
   <body id="pane">
     <section class="start">
-      <img class="protagonist" src="http://placekitten.com/400/400" />
+      <img class="protagonist" src="one.jpg" />
     </section>
     <main>
       <div class="wrapper">
@@ -54,6 +54,30 @@
       )
 
       $(".three").waypoint(
+        function () {
+          $(".protagonist").css("filter", "hue-rotate(90deg)")
+        },
+        { offset: "50%", horizontal: true }
+      )
+      $(".two").waypoint(
+        function () {
+          $(".protagonist").css("filter", "grayscale")
+        },
+        { offset: "50%", horizontal: true }
+      )
+      $(".three").waypoint(
+        function () {
+          $(".protagonist").css("filter", "hue-rotate(90deg)")
+        },
+        { offset: "50%", horizontal: true }
+      )
+      $(".four").waypoint(
+        function () {
+          $(".protagonist").css("filter", "hue-rotate(90deg)")
+        },
+        { offset: "50%", horizontal: true }
+      )
+     $(".five").waypoint(
         function () {
           $(".protagonist").css("filter", "hue-rotate(90deg)")
         },
